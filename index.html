@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--Credits:
+Photo by <a href="https://unsplash.com/@karsten116?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Karsten Winegeart</a> on <a href="https://unsplash.com/photos/a-man-standing-on-a-tiled-floor-in-a-white-shirt-I1XXFcOxUSs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+Photo by <a href="https://unsplash.com/@bhavya_xl?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Bhavya Shah</a> on <a href="https://unsplash.com/photos/woman-wearing-red-and-black-zip-up-jacket-standing-g28-mHHl-Z0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | BrandName</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Header Section -->
+    <header class="hero2">
+        <nav class="navbar sticky-navbar">
+            <div class="logo"><a href="index.html">BrandName</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Shopping Cart Icon -->
+            <div class="cart-icon">
+                <a href="cart.html" id="cart"><img src="cart-icon.png" alt="Cart" width="30" /></a>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Discover Your Style</h1>
+            <p>Exclusive Collections, Unmatched Prices.</p>
+            <!-- Replaced the old button with the new custom button -->
+            <a href="shop.html" class="flash-slide flash-slide--orange">
+                <span class="btn-slide-show-text1">Shop Now</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Featured Product Section -->
+    <section class="featured-product">
+        <h2 class="h22">New Arrival</h2>
+        <div class="product-card">
+            <img src="product.png" alt="Featured Product" class="product-image">
+            <h3 class="product-title">Stylish Jacket</h3>
+            <p class="product-price">$79.99</p>
+            <button class="product-button" onclick="addToCart('Stylish Jacket', 79.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Section -->
+    <section class="shopping-cart" id="shopping-cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: $0.00</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 BrandName. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

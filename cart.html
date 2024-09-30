@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | BrandName</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Header Section -->
+    <header class="hero-header">
+        <nav class="navbar sticky-navbar">
+            <div class="logo"><a href="index.html">BrandName</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="sale.html">Sale</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Shopping Cart Icon -->
+            <div class="cart-icon">
+                <a href="cart.html" id="cart"><img src="cart-icon.png" alt="Cart" width="30" /></a>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: $0.00</p>
+        <button onclick="checkout()" class="cta-button">Checkout</button>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 BrandName. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
